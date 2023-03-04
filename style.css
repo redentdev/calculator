@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'SF-Pro';
+  src: url('./fonts/SF-Pro.ttf') format("truetype");
+}
+
+body {
+    font-family: 'SF-Pro';
+    font-size: 15pt;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+#result {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 135px;
+  font-size: 50px;
+  color: #fff;
+  text-align: right;
+  background-color: #000;
+  border: none;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  left: 12px;
+  top: 25%;
+  height: 75%;
+  width: 97%;
+}
+
+input {
+  font-family: 'SF-Pro';
+  margin-right: 25px;
+}
+
+button {
+  font-family: 'SF-Pro';
+  font-size: 21pt;
+  width: 24%;
+  margin: 0 3px 2px -5px;
+  height: calc(95% / 5);
+  background-color: #262626;
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+button:active {
+  opacity: 75%;
+}
+
+.divide, .multi, .sum, .sub, .submit {
+  background-color: orange;
+}
+
+#ac, .yuzde, #del {
+  background-color: #565656;
+}
+
+.zero {
+  width: 47%;
+  border-radius: 50px;
+}
