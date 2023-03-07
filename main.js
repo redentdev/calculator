@@ -1,16 +1,23 @@
+const islem = document.querySelector("#islem");
 const result = document.querySelector("#result");
 const buttons = document.querySelectorAll("button");
 
 buttons.forEach(btn => {
   btn.addEventListener("click", function() {
     if(btn.id == "submit"){
-      result.value = eval(result.value);
+      islem.value = eval(islem.value);
+      result.innerHTML = "";
     }else if(btn.id == "ac"){
-      result.value = "";
+      islem.value = "";
     }else if(btn.id == "del"){
-      result.value = result.value.slice(0, -1);
+      islem.value = islem.value.slice(0, -1);
     }else{
-      result.value += btn.id;
+      islem.value += btn.id;
+      if(islem.value.includes("+") || islem.value.includes("-") || islem.value.includes("/") || islem.value.includes("*")){
+        result.innerHTML = eval(islem.value);
+      }else{
+        result.innerHTML = "";
+      }
     }
   });
 });

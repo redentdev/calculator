@@ -13,7 +13,7 @@ body {
     background-color: #000;
 }
 
-#result {
+#islem, #result {
   position: absolute;
   top: 0;
   width: 100%;
@@ -23,6 +23,14 @@ body {
   text-align: right;
   background-color: #000;
   border: none;
+}
+
+#result {
+  margin-top: 95px;
+  font-size: 20px;
+  margin-right: 25px;
+  color: #999999;
+  transition: all .5s;
 }
 
 .buttons {
